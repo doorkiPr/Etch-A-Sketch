@@ -2,7 +2,14 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.wrapper{
+    display: flex;
+}
+.menu{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
 .grid{
     height: 500px;
     width: 500px;
