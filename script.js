@@ -1,5 +1,6 @@
 const grid = document.querySelector('.grid');
 const slider = document.querySelector('input');
+const sliderInfo = document.querySelector('.sliderInfo');
 
 const generateGrid = (squareNumbers) => {
     for (let i = 0; i < squareNumbers; i++) {
@@ -15,5 +16,6 @@ const generateGrid = (squareNumbers) => {
 slider.addEventListener("input",e=>{    
     grid.replaceChildren(); //delete all the squares each time the user changes the value
    const squareNumbers = e.currentTarget.value*e.currentTarget.value;
+   sliderInfo.textContent=`grid size : ${e.currentTarget.value} x ${e.currentTarget.value} `
    generateGrid(squareNumbers)
 })
