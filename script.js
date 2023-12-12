@@ -1,4 +1,5 @@
 const grid = document.querySelector('.grid');
+const slider = document.querySelector('input');
 
 let squareNumbers = prompt('how many squares do u want ');
 squareNumbers = squareNumbers*squareNumbers;
