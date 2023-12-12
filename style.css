@@ -6,7 +6,10 @@ body{
 .grid{
     height: 500px;
     width: 500px;
-    border: 1px red solid;
     display: flex;
     flex-wrap: wrap;
+}
+
+.square{
+    border: 1px black solid;
 }
