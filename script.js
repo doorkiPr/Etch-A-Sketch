@@ -25,3 +25,8 @@ slider.addEventListener("input",e=>{
    sliderInfo.textContent=`grid size : ${e.currentTarget.value} x ${e.currentTarget.value} `
    generateGrid(squareNumbers)
 })
+
+const colorSquare = (e)=>{
+    let randomColor = getRandomValue(rainbow);
+    e.currentTarget.style.backgroundColor=`${randomColor}`
+}
