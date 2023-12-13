@@ -39,6 +39,9 @@ slider.addEventListener("input",e=>{
 })
 
 const colorSquare = (e)=>{
-    let randomColor = getRandomValue(rainbow);
-    e.currentTarget.style.backgroundColor=`${randomColor}`
+    if( e.currentTarget.style.backgroundColor === ""){
+        let randomColor = getRandomValue(rainbow);
+        e.currentTarget.style.backgroundColor=`${randomColor}`
+     }
+
 }
