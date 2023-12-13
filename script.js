@@ -45,6 +45,12 @@ const colorSquare = (e)=>{
      }
      else if(e.currentTarget.style.filter == ""){
         e.currentTarget.style.filter=`brightness( 90%) ` // lessen brightness to 90% if square dosen't have brightness effect already
+     } 
+     else {
+        const oldbrightness =  e.currentTarget.style.filter.replace(regex,""); //extract only the number value from the string that's returned
+        const newBrightness = oldbrightness - 10;
+        e.currentTarget.style.filter =`brightness(${newBrightness}%)`//use it here to lessen the brightness dynamically
      }
+    
 
 }
