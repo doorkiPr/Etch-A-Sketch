@@ -11,6 +11,7 @@ const rainbow = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 const grid = document.querySelector('.grid');
 const slider = document.querySelector('input');
 const sliderInfo = document.querySelector('.sliderInfo');
+const regex = /\D/g ; // regex that looks for anythign that's not a number
 
 
 const getRandomValue = (array)=>{
