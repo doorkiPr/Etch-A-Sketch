@@ -43,5 +43,8 @@ const colorSquare = (e)=>{
         let randomColor = getRandomValue(rainbow);
         e.currentTarget.style.backgroundColor=`${randomColor}`
      }
+     else if(e.currentTarget.style.filter == ""){
+        e.currentTarget.style.filter=`brightness( 90%) ` // lessen brightness to 90% if square dosen't have brightness effect already
+     }
 
 }
