@@ -1,6 +1,12 @@
 const grid = document.querySelector('.grid');
 const slider = document.querySelector('input');
 const sliderInfo = document.querySelector('.sliderInfo');
+const rainbow = ['red','green','yellow','yellow','orange','violet'];
+
+const getRandomValue = (array)=>{
+    let randomIndex = (Math.floor(Math.random() * array.length));
+    return array[randomIndex]
+}
 
 const generateGrid = (squareNumbers) => {
     for (let i = 0; i < squareNumbers; i++) {
